@@ -230,48 +230,28 @@ button:focus,
   }
 }
 
-@keyframes color-change {
-	0% {
-		fill: #edc655;
-	}
-	50% {
-		fill: #fcffad;
-	}
-	100% {
-		fill: #f76414;
-	}
+footer {
+	padding-top: 40px;
+	margin: 80px 60px 100px 60px;
+	border-top: 0.5px solid black;
 }
 
-.sun {
-	animation: 4s color-change infinite alternate linear;
+.name {
+	font-size: 28px;
+	text-align: left;
+	float: left;
+	clear: none;
+	width: 50%;
+}
+.links {
+	text-align: right;
+	float: right;
+	clear: none;
+	width: 50%;
 }
 
-@keyframes cloud-move {
-	from {
-		transform: translate(0, 50px);
-	}
-	to {
-		transform: translate(200px, 50px);
-	}
-}
-
-.cloud-front {
-	animation: 30s cloud-move infinite alternate linear;
-}
-
-@keyframes cloud-move-reverse {
-	from {
-		transform: translate(446px, 48px);
-	}
-	to {
-		transform: translate(100px, 48px);
-	}
-}
-
-.cloud-back {
-	animation: 34s cloud-move-reverse infinite alternate linear;
-}
-
-.berlin-illustration {
-	max-width: 100%;
+.links li {
+	font-size: 18px;
+	display: inline;
+	margin-left: 22px;
 }
