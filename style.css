@@ -104,7 +104,7 @@ nav {
 .languages {
 	padding-top: 100px;
 	margin: auto;
-	max-width: 800px;
+	max-width: 1000px;
 }
 
 .other-languages {
@@ -120,12 +120,16 @@ nav {
 	margin: 18px 15px 40px 10px;
 }
 
-.row {
-	display: flex;
+.column {
+	float: left;
+	width: 50%;
 }
 
-.column {
-	flex: 50%;
+/* Clear floats after the columns */
+.row:after {
+	content: "";
+	display: table;
+	clear: both;
 }
 
 .page-title {
@@ -143,7 +147,7 @@ nav {
 }
 
 .page-content p {
-	font-size: 18px;
+	font-size: 17px;
 	line-height: 1.5;
 }
 
@@ -153,11 +157,7 @@ nav {
 	margin: auto;
 }
 
-.about-image {
-	margin: 80px 0 80px 0;
-}
-
-.contact-image {
+.page-image {
 	margin: 40px 0 80px 0;
 }
 
@@ -169,7 +169,7 @@ nav {
 .page-header {
 	display: flex;
 	width: 100%;
-	padding: 15px 69px 33px 69px;
+	padding: 30px 60px 30px 60px;
 }
 
 .page-header__item {
@@ -263,7 +263,7 @@ footer {
 }
 
 .name {
-	font-size: 28px;
+	font-size: 24px;
 	text-align: left;
 	float: left;
 	clear: none;
@@ -273,11 +273,12 @@ footer {
 	text-align: right;
 	float: right;
 	clear: none;
+	vertical-align: middle;
 	width: 50%;
 }
 
 .links li {
-	font-size: 18px;
+	font-size: 16px;
 	display: inline;
 	margin-left: 22px;
 }
